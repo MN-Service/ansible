@@ -1,0 +1,7 @@
+---
+- name: debug tasks
+  tasks:
+    - name: print artifacts
+      debug:
+        msg: "printing variable {{test_var}}"
+        var: ansible_facts
